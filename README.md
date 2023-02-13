@@ -1,4 +1,4 @@
-# UsingTestEditor
+# UsingTextEditor
 Using  text editor with Asp.Net Core 5.0
 
 I used .Net 5.0.
