@@ -1,0 +1,67 @@
+﻿@model TextEditorProject.Models.Blog
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Blog</h4>
+<hr />
+<div class="row">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+                    <label for="inputEmail4"><strong>Text</strong></label>
+                    <div id="editparent" style="border-style:solid;border-width:1px;">
+                        <div id="editControls">
+                            <div class="btn-group">
+                                <a class="btn btn-xs btn-default" data-role="undo" href="#" title="Undo"><i class="bi bi-arrow-counterclockwise text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="redo" href="#" title="Redo"><i class="bi bi-arrow-clockwise text-dark"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-xs btn-default" data-role="bold" href="#" title="Bold"><i class="bi bi-type-bold text-dark" text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="italic" href="#" title="Italic"><i class="bi bi-type-italic text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="underline" href="#" title="Underline"><i class="bi bi-type-underline text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="strikeThrough" href="#" title="Strikethrough"><i class="bi bi-type-strikethrough text-dark"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-xs btn-default" data-role="indent" href="#" title="Blockquote"><i class="bi bi-text-indent-left text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="insertUnorderedList" href="#" title="Unordered List"><i class="bi bi-list-ul text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="insertOrderedList" href="#" title="Ordered List"><i class="bi bi-list-ol text-dark"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-xs btn-default" data-role="h1" href="#" title="Heading 1"><i class="bi bi-type-h1 text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="h2" href="#" title="Heading 2"><i class="bi bi-type-h2 text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="h3" href="#" title="Heading 3"><i class="bi bi-type-h3 text-dark"></i></a>
+                                <a class="btn btn-xs btn-default" data-role="p" href="#" title="Paragraph"><i class="bi bi-paragraph text-dark"></i></a>
+                            </div>
+                        </div>
+                        <div id="editor" contenteditable></div>
+                        <textarea asp-for="Text" id="editorCopy" required="required" style="display:none;" class="form-control"></textarea>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
