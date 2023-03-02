@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0GBd0fDmUp/bJ0M7k08KDME0BLU7x0LACfm9CAqTdmkplx5audDq6LYKp8pqZBmFa6pOyVxg/SCIVxpllPj1Cg==",
+  "dgSpecHash": "+AkzXWzVb9KE/j2iiNsebwHDNL6rTvhyM+UDGniaahRgLqcT5epgpo1rYSlZ8wB9K/C9Vdj2FBE1y4yQZqVwhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\smtun\\Desktop\\SELÇUK\\YAZILIM & BİLGİSAYAR\\KİŞİSEL PROJELER\\TextEditorProject\\TextEditorProject\\TextEditorProject.csproj",
+  "projectFilePath": "C:\\Users\\smtun\\Source\\Repos\\UsingTextEditor\\TextEditorProject\\TextEditorProject\\TextEditorProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\smtun\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\smtun\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
